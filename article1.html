@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Geliştirme Temelleri - Modern web geliştirmenin temel kavramları">
+    <title>Web Geliştirme Temelleri - Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Benim Blogum</h1>
+            <p>Teknoloji, yazılım ve hayattan yazılar</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <article class="article-full">
+                <h1>Web Geliştirme Temelleri</h1>
+                <div class="article-meta">
+                    <span>📅 10 Kasım 2025</span> •
+                    <span>👤 Admin</span> •
+                    <span>⏱️ 5 dk okuma</span>
+                </div>
+
+                <div class="article-full-content">
+                    <p>
+                        Modern web geliştirme, sürekli değişen ve gelişen dinamik bir alan. Bu yazıda,
+                        web geliştirmenin temel taşlarını ve başarılı bir web geliştiricisi olmak için
+                        bilmeniz gereken konuları ele alacağız.
+                    </p>
+
+                    <h2>HTML: Web'in İskeleti</h2>
+                    <p>
+                        HTML (HyperText Markup Language), web sayfalarının yapısını oluşturan temel dildir.
+                        Semantic HTML kullanarak hem arama motorları hem de ekran okuyucular için daha
+                        anlaşılır içerikler oluşturabilirsiniz.
+                    </p>
+
+                    <h3>Önemli HTML5 Etiketleri:</h3>
+                    <ul>
+                        <li><code>&lt;header&gt;</code> - Sayfa veya bölüm başlığı</li>
+                        <li><code>&lt;nav&gt;</code> - Navigasyon menüsü</li>
+                        <li><code>&lt;main&gt;</code> - Ana içerik alanı</li>
+                        <li><code>&lt;article&gt;</code> - Bağımsız içerik</li>
+                        <li><code>&lt;section&gt;</code> - İçerik bölümü</li>
+                        <li><code>&lt;footer&gt;</code> - Sayfa veya bölüm altbilgisi</li>
+                    </ul>
+
+                    <h2>CSS: Görsel Tasarım</h2>
+                    <p>
+                        CSS (Cascading Style Sheets), web sayfalarınıza stil ve görsel çekicilik katar.
+                        Modern CSS özellikleri ile responsive ve güzel tasarımlar oluşturabilirsiniz.
+                    </p>
+
+                    <h3>Modern CSS Teknikleri:</h3>
+                    <ol>
+                        <li><strong>Flexbox:</strong> Tek boyutlu layout düzenlemeleri için ideal</li>
+                        <li><strong>Grid:</strong> İki boyutlu kompleks layout'lar için mükemmel</li>
+                        <li><strong>Custom Properties:</strong> CSS değişkenleri ile dinamik stiller</li>
+                        <li><strong>Animations:</strong> Akıcı ve etkileyici animasyonlar</li>
+                    </ol>
+
+                    <p>Basit bir CSS örneği:</p>
+                    <pre><code>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}</code></pre>
+
+                    <h2>JavaScript: İnteraktivite</h2>
+                    <p>
+                        JavaScript, web sayfalarınıza dinamik davranışlar ekler. Modern JavaScript
+                        (ES6+) ile daha temiz ve okunabilir kod yazabilirsiniz.
+                    </p>
+
+                    <h3>Temel JavaScript Konuları:</h3>
+                    <ul>
+                        <li>DOM Manipülasyonu</li>
+                        <li>Event Handling (Olay Yönetimi)</li>
+                        <li>Asenkron Programlama (Promises, Async/Await)</li>
+                        <li>Fetch API ile Veri Çekme</li>
+                        <li>ES6+ Özellikleri (Arrow Functions, Destructuring, vb.)</li>
+                    </ul>
+
+                    <h2>Responsive Tasarım</h2>
+                    <p>
+                        Günümüzde web sitelerinin farklı ekran boyutlarında düzgün görünmesi kritik
+                        önem taşıyor. Mobile-first yaklaşımı benimseyerek başlayın ve media queries
+                        kullanarak farklı cihazlar için optimize edin.
+                    </p>
+
+                    <pre><code>/* Mobile First */
+.container {
+    padding: 1rem;
+}
+
+/* Tablet ve üzeri */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}</code></pre>
+
+                    <h2>En İyi Uygulamalar</h2>
+                    <p>Başarılı web geliştirme için bazı önemli prensipler:</p>
+                    <ul>
+                        <li><strong>Semantic HTML kullanın</strong> - Kod okunabilirliği ve erişilebilirlik</li>
+                        <li><strong>CSS'i organize edin</strong> - BEM, SMACSS gibi metodolojiler</li>
+                        <li><strong>JavaScript'i optimize edin</strong> - Gereksiz DOM manipülasyonundan kaçının</li>
+                        <li><strong>Performans öncelikli düşünün</strong> - Lazy loading, minification</li>
+                        <li><strong>Erişilebilirlik</strong> - WCAG standartlarına uyun</li>
+                        <li><strong>Cross-browser uyumluluk</strong> - Farklı tarayıcılarda test edin</li>
+                    </ul>
+
+                    <h2>Sonuç</h2>
+                    <p>
+                        Web geliştirme, öğrenmeye her zaman açık olan heyecan verici bir alan.
+                        HTML, CSS ve JavaScript'in temellerini sağlam bir şekilde öğrenmek,
+                        başarılı bir web geliştiricisi olmanın ilk adımıdır. Sürekli pratik yapın,
+                        yeni teknolojileri takip edin ve toplulukla etkileşimde bulunun.
+                    </p>
+
+                    <p>
+                        Bir sonraki yazımızda CSS Grid ile modern layout tasarımını inceleyeceğiz.
+                        Takipte kalın!
+                    </p>
+                </div>
+
+                <a href="index.html" class="back-link">← Anasayfaya Dön</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Benim Blogum. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
