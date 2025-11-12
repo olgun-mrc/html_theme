@@ -3,146 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern ve temiz blog teması">
-    <title>Blog - Anasayfa</title>
+    <meta name="description" content="Modern one-page blog ve portfolio teması">
+    <title>Portfolio & Blog - Anasayfa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Benim Blogum</h1>
-            <p>Teknoloji, yazılım ve hayattan yazılar</p>
-        </div>
-    </header>
-
+    <!-- Navigation -->
     <nav>
         <div class="container">
+            <div class="logo">MyBlog</div>
             <ul>
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="#hakkimda">Hakkımda</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">İletişim</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <div class="container">
-            <div class="articles-grid">
-                <!-- Makale 1 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        📱
-                    </div>
-                    <div class="article-card-content">
-                        <h2>Web Geliştirme Temelleri</h2>
-                        <div class="article-meta">
-                            <span>10 Kasım 2025</span> • <span>5 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            Modern web geliştirmenin temel kavramlarını ve en iyi uygulamalarını keşfedin.
-                            HTML, CSS ve JavaScript ile başarılı projeler oluşturun.
-                        </p>
-                        <a href="article1.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
-
-                <!-- Makale 2 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        🎨
-                    </div>
-                    <div class="article-card-content">
-                        <h2>CSS Grid ile Modern Layout</h2>
-                        <div class="article-meta">
-                            <span>8 Kasım 2025</span> • <span>7 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            CSS Grid kullanarak responsive ve modern web tasarımları oluşturun.
-                            Pratik örnekler ve ipuçları ile dolu bir rehber.
-                        </p>
-                        <a href="article2.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
-
-                <!-- Makale 3 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        ⚡
-                    </div>
-                    <div class="article-card-content">
-                        <h2>JavaScript ES6+ Özellikleri</h2>
-                        <div class="article-meta">
-                            <span>5 Kasım 2025</span> • <span>8 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            Modern JavaScript'in sunduğu yeni özellikler ile kod yazma deneyiminizi
-                            bir üst seviyeye taşıyın. Arrow functions, async/await ve daha fazlası.
-                        </p>
-                        <a href="article3.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
-
-                <!-- Makale 4 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        🚀
-                    </div>
-                    <div class="article-card-content">
-                        <h2>Web Performans Optimizasyonu</h2>
-                        <div class="article-meta">
-                            <span>2 Kasım 2025</span> • <span>6 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            Web sitenizin hızını artırmak için uygulayabileceğiniz pratik teknikler.
-                            Lazy loading, caching ve daha fazlası hakkında bilgi edinin.
-                        </p>
-                        <a href="article4.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
-
-                <!-- Makale 5 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        🔒
-                    </div>
-                    <div class="article-card-content">
-                        <h2>Web Güvenliği Temelleri</h2>
-                        <div class="article-meta">
-                            <span>30 Ekim 2025</span> • <span>9 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            Web uygulamalarınızı güvenli hale getirmek için bilmeniz gereken
-                            temel güvenlik önlemleri ve en iyi uygulamalar.
-                        </p>
-                        <a href="article5.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
-
-                <!-- Makale 6 -->
-                <article class="article-card">
-                    <div class="article-card-image">
-                        💡
-                    </div>
-                    <div class="article-card-content">
-                        <h2>Responsive Tasarım Prensipleri</h2>
-                        <div class="article-meta">
-                            <span>28 Ekim 2025</span> • <span>5 dk okuma</span>
-                        </div>
-                        <p class="article-excerpt">
-                            Tüm cihazlarda mükemmel görünen web siteleri tasarlamanın sırları.
-                            Mobile-first yaklaşımı ve media queries kullanımı.
-                        </p>
-                        <a href="article6.html" class="read-more">Devamını Oku →</a>
-                    </div>
-                </article>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Merhaba, Ben Bir Web Geliştiriciyim</h1>
+            <p>Teknoloji, yazılım ve yaratıcılık tutkusuyla projeler geliştiriyorum</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">Projelerimi Gör</a>
+                <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
             </div>
         </div>
-    </main>
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <p class="section-subtitle">Yazılım geliştirme yolculuğumda edindiğim deneyimler</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Kim ben?</h3>
+                    <p>
+                        Merhaba! Ben tutkulu bir web geliştiriciyim ve modern teknolojiler kullanarak
+                        kullanıcı dostu, performanslı ve estetik web uygulamaları geliştiriyorum.
+                    </p>
+                    <p>
+                        Frontend ve backend teknolojilerinde deneyimliyim. HTML, CSS, JavaScript,
+                        React, Node.js gibi teknolojilerle çalışıyorum. Responsive tasarım,
+                        kullanıcı deneyimi ve clean code prensipleri benim için önemli.
+                    </p>
+                    <p>
+                        Sürekli öğrenmeye ve kendimi geliştirmeye inanıyorum. Blog'umda edindiğim
+                        bilgileri ve deneyimlerimi paylaşıyorum.
+                    </p>
+                </div>
+                <div class="about-image">
+                    👨‍💻
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Carousel Section -->
+    <section id="blog">
+        <div class="container">
+            <h2 class="section-title">Son Yazılar</h2>
+            <p class="section-subtitle">Teknoloji ve yazılım dünyasından en güncel yazılarım</p>
+
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="carousel-image">📱</div>
+                            <div class="carousel-text">
+                                <h3>Web Geliştirme Temelleri</h3>
+                                <div class="carousel-meta">
+                                    <span>📅 10 Kasım 2025</span> • <span>⏱️ 5 dk okuma</span>
+                                </div>
+                                <p>
+                                    Modern web geliştirmenin temel kavramlarını ve en iyi uygulamalarını keşfedin.
+                                    HTML, CSS ve JavaScript ile başarılı projeler oluşturun. Semantic HTML,
+                                    responsive tasarım ve clean code prensipleri hakkında detaylı bilgi.
+                                </p>
+                                <a href="article1.html" class="btn btn-primary">Devamını Oku →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="carousel-image">🎨</div>
+                            <div class="carousel-text">
+                                <h3>CSS Grid ile Modern Layout</h3>
+                                <div class="carousel-meta">
+                                    <span>📅 8 Kasım 2025</span> • <span>⏱️ 7 dk okuma</span>
+                                </div>
+                                <p>
+                                    CSS Grid kullanarak responsive ve modern web tasarımları oluşturun.
+                                    Pratik örnekler ve ipuçları ile dolu bir rehber. Grid sistemi ile
+                                    karmaşık layout'ları nasıl basit bir şekilde oluşturabileceğinizi öğrenin.
+                                </p>
+                                <a href="#blog" class="btn btn-primary">Devamını Oku →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="carousel-image">⚡</div>
+                            <div class="carousel-text">
+                                <h3>JavaScript ES6+ Özellikleri</h3>
+                                <div class="carousel-meta">
+                                    <span>📅 5 Kasım 2025</span> • <span>⏱️ 8 dk okuma</span>
+                                </div>
+                                <p>
+                                    Modern JavaScript'in sunduğu yeni özellikler ile kod yazma deneyiminizi
+                                    bir üst seviyeye taşıyın. Arrow functions, async/await, destructuring,
+                                    spread operator ve daha fazlası hakkında detaylı örneklerle öğrenin.
+                                </p>
+                                <a href="#blog" class="btn btn-primary">Devamını Oku →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="carousel-image">🚀</div>
+                            <div class="carousel-text">
+                                <h3>Web Performans Optimizasyonu</h3>
+                                <div class="carousel-meta">
+                                    <span>📅 2 Kasım 2025</span> • <span>⏱️ 6 dk okuma</span>
+                                </div>
+                                <p>
+                                    Web sitenizin hızını artırmak için uygulayabileceğiniz pratik teknikler.
+                                    Lazy loading, image optimization, caching stratejileri ve bundle size
+                                    optimizasyonu hakkında bilmeniz gereken her şey.
+                                </p>
+                                <a href="#blog" class="btn btn-primary">Devamını Oku →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">‹</button>
+                    <button class="carousel-btn" id="nextBtn">›</button>
+                </div>
+
+                <div class="carousel-indicators" id="indicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Üzerinde çalıştığım projeler ve çözümler</p>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🛒</div>
+                    <div class="portfolio-content">
+                        <h3>E-Ticaret Platformu</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <p>
+                            Tam özellikli bir e-ticaret platformu. Ürün yönetimi, sepet sistemi,
+                            ödeme entegrasyonu ve admin paneli içerir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">📱</div>
+                    <div class="portfolio-content">
+                        <h3>Mobil Uygulama</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                        <p>
+                            Cross-platform mobil uygulama. Real-time bildirimler, sosyal medya
+                            entegrasyonu ve offline çalışma desteği.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">📊</div>
+                    <div class="portfolio-content">
+                        <h3>Dashboard & Analytics</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Express</span>
+                        </div>
+                        <p>
+                            İş zekası dashboard'u. Gerçek zamanlı veri görselleştirme,
+                            raporlama ve analitik özellikleri içerir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🎨</div>
+                    <div class="portfolio-content">
+                        <h3>Portfolyo Teması</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p>
+                            Modern ve responsive portfolyo teması. Smooth scroll, animasyonlar
+                            ve koyu mod desteği ile tam özelleştirebilir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🤖</div>
+                    <div class="portfolio-content">
+                        <h3>AI Chatbot</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        <p>
+                            Doğal dil işleme teknolojisi kullanan akıllı chatbot.
+                            Müşteri desteği otomasyonu ve çoklu dil desteği.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🔐</div>
+                    <div class="portfolio-content">
+                        <h3>Güvenli API Gateway</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <p>
+                            Microservices mimarisi için güvenli API gateway çözümü.
+                            Rate limiting, authentication ve caching özellikleri.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <p class="section-subtitle">Benimle iletişime geçin, birlikte harika projeler yapalım!</p>
+
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Adınız</label>
+                        <input type="text" id="name" name="name" required placeholder="Adınızı girin">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" name="email" required placeholder="E-posta adresinizi girin">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Benim Blogum. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="#" title="GitHub">🔗</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="Email">📧</a>
+            </div>
+            <p>&copy; 2025 MyBlog. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
